@@ -1,1 +1,1 @@
-# intro.python.24
+# Introduction to Python for Social Research
