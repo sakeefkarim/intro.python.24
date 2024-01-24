@@ -15,7 +15,7 @@ library(reticulate)
 
 # Create new Anaconda directory featuring select packages:
 
-conda_create("r-python", python_version = "3.12.1")
+conda_create("r-python", python_version = "3.11.7")
 
 # Moving forward, to use the conda environment created on line 13, run: 
 
