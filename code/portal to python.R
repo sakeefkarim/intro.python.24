@@ -7,6 +7,7 @@
 # PREAMBLE ---------------------------------------------------------------------
 
 #renv::restore()
+
 library(palmerpenguins)
 library(tidyverse)
 library(reticulate)
@@ -17,13 +18,15 @@ library(reticulate)
 
 conda_create("r-python", python_version = "3.11.7")
 
+use_condaenv("cand3")
+
 # Moving forward, to use the conda environment created on line 13, run: 
 
 # use_condaenv("NAME OF ENV GOES HERE")
 
 # Add pandas and seaborn to your new Anaconda (conda) environment:
 
-conda_install("r-python", c("pandas", "seaborn"))
+conda_install("r-python", c("pandas", "seaborn", "matplotlib"))
 
 # GENERATING PLOTS VIA SEABORN AND GGPLOT --------------------------------------
 
